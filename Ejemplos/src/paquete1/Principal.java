@@ -3,10 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package paquetedos;
+package paquete1;
 
 
-import paqueteuno.Operador;
+import paquete2.Operador;
 
 public class Principal {
     
