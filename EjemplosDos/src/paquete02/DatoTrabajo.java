@@ -6,27 +6,29 @@
 package paquete02;
 
 import java.util.Scanner;
+
 /**
  *
  * @author reroes
  */
 public class DatoTrabajo {
 
-    public static String obtenerTrabajo() {
+    public static String obtenerEmpresa() {
         Scanner entrada = new Scanner(System.in);
-        String acumulador;
+        String empresa;
 
-        // método que permita preguntar al usuario el nombre de la empresa
         System.out.println("Ingrese el nombre de la empresa");
-        String nombreEmpresa = entrada.nextLine();
-        // método que permita preguntar al usuario la dirección de la empresa
-        System.out.println("Ingrese la direccion de la empresa");
-        String direccionTrabajo = entrada.nextLine();
-        acumulador = String.format("Nombre de la empresa es: %s\n Direccion  "
-                + "de la empresa es: %s",
-                nombreEmpresa,
-                direccionTrabajo);
-        return acumulador;
+        empresa = entrada.nextLine();
+        return empresa;
+
     }
 
+    public static String obtenerDireccion() {
+        Scanner entrada = new Scanner(System.in);
+        String direccion;
+        System.out.println("Ingrese la direccion de la empresa");
+        direccion = entrada.nextLine();
+        return direccion;
+    }
 }
+

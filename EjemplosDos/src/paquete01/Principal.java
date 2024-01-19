@@ -21,16 +21,18 @@ public class Principal {
         String nombre;
         String ciudad;
         String apellidoRetornado;
-        String trabajo;
+        String empresa;
+        String direccion;
         String acumulador;
-
+        
         double[] misNotas;
         double promedio;
 
+        empresa = DatoTrabajo.obtenerEmpresa();
+        direccion = DatoTrabajo.obtenerDireccion();
         nombre = DatoPersonal.obtenerNombre();
         apellidoRetornado = DatoPersonal.obtenerApellido();
         ciudad = DatosUbicacion.obtenerCiudad();
-        trabajo = DatoTrabajo.obtenerTrabajo();
         misNotas = DatoAcademico.obtenerNotas(4);
         promedio = DatoFinal.obtenerPromedio(misNotas);
         String notas = " ";
@@ -42,13 +44,15 @@ public class Principal {
                 + "Nombre: %s\n"
                 + "Apellido: %s\n"
                 + "Ciudad: %s\n"
-                + "Trabajo: %s\n"
+                + "Empresa: %s\n"
+                + "Direccion: %s\n"
                 + "Notas : %s\n"
                 + "Promedio: %.2f\n",
                 nombre,
                 apellidoRetornado,
                 ciudad,
-                trabajo,
+                empresa,
+                direccion,
                 notas,
                 promedio);
         System.out.println(acumulador);
